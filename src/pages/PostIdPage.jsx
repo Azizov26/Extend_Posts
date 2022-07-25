@@ -10,10 +10,10 @@ const PostIdPage = () => {
 	const [post, setPost] = useState({})
 	const [comments, setComments] = useState([])
 	const [fetchPostById, isLoading, error] = useFetching( async (id) => {
-		const response = await PostService.getBiId(params.id)
+	const response = await PostService.getBiId(params.id)
 		setPost(response.data)
 	})
-	const [fetchComments, isComLoading, comError] = useFetching( async (id) => {
+	const [fetchComments, isComLoading] = useFetching( async (id) => {
 		const response = await PostService.getCommentByPostId(id)
 		setComments(response.data)
 	})

@@ -1,0 +1,11 @@
+.page {
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
+
+  &&__current {
+    border: 2px solid orange;
+    font-weight: bold;
+  }
+}

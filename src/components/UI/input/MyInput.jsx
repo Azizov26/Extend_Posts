@@ -1,8 +1,9 @@
 import React from 'react'
-import './index.css'
+
+import styles from './MyInput.module.scss'
 
 export const MyInput = ((props) => {
 	return ( 
-		<input  className='myInput' {...props}/>
+		<input  className={styles.myInput} {...props}/>
 	 );
 })
